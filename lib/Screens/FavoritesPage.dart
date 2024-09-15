@@ -5,6 +5,18 @@ class Favoritespage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold();
+    return Scaffold(
+      appBar: AppBar(
+        actions: [
+          IconButton(
+            icon: Image.asset(
+              'assets/images/bag.png',
+              color: Colors.black,
+            ),
+            onPressed: () {},
+          ),
+        ],
+      ),
+    );
   }
 }

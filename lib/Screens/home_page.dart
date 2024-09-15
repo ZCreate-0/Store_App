@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:store_app/Screens/FavoritesPage.dart';
 
 class StoreScreen extends StatefulWidget {
   const StoreScreen({super.key});
@@ -307,7 +308,12 @@ class _StoreScreenState extends State<StoreScreen> {
               ),
             ),
             IconButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (BuildContext context) {
+                  return Favoritespage();
+                }));
+              },
               icon: Image.asset('assets/images/Heart.png'),
             ),
             IconButton(
