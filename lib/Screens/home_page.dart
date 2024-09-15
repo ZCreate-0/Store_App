@@ -75,7 +75,7 @@ class _StoreScreenState extends State<StoreScreen> {
                           backgroundColor: Color(0xffb9775fa),
                           shape: RoundedRectangleBorder(
                             borderRadius:
-                                BorderRadius.circular(5), // <-- Radius
+                                BorderRadius.circular(5), 
                           ),
                         ),
                       ),
