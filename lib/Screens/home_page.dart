@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class StoreScreen extends StatefulWidget {
+  const StoreScreen({super.key});
+
   @override
   State<StoreScreen> createState() => _StoreScreenState();
 }
@@ -26,20 +28,20 @@ class _StoreScreenState extends State<StoreScreen> {
       ),
       body: SingleChildScrollView(
         child: Container(
-          padding: EdgeInsets.all(20),
+          padding: const EdgeInsets.all(20),
           height: 900,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(
+              const Text(
                 'Hello',
                 style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
               ),
-              Text(
+              const Text(
                 'Welcome to Laza.',
-                style: TextStyle(color: Color(0xffb8F959E), fontSize: 15),
+                style: TextStyle(color: Color(0xffb8f959e), fontSize: 15),
               ),
-              SizedBox(height: 25),
+              const SizedBox(height: 25),
               Container(
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -50,8 +52,8 @@ class _StoreScreenState extends State<StoreScreen> {
                           decoration: InputDecoration(
                               focusedBorder: InputBorder.none,
                               filled: true,
-                              fillColor: Color(0xffbf5f6fa),
-                              enabledBorder: OutlineInputBorder(
+                              fillColor: const Color(0xffbf5f6fa),
+                              enabledBorder: const OutlineInputBorder(
                                 borderSide:
                                     BorderSide(color: Colors.white, width: 1),
                               ),
@@ -63,20 +65,20 @@ class _StoreScreenState extends State<StoreScreen> {
                       ),
                     ),
                     Container(
-                      margin: EdgeInsets.only(left: 10),
+                      margin: const EdgeInsets.only(left: 10),
                       height: 55,
                       child: ElevatedButton(
                         onPressed: () {},
-                        child: Image.asset(
-                          'assets/images/Voice.png',
-                          color: Colors.white,
-                        ),
                         style: ElevatedButton.styleFrom(
-                          backgroundColor: Color(0xffb9775fa),
+                          backgroundColor: const Color(0xffb9775fa),
                           shape: RoundedRectangleBorder(
                             borderRadius:
                                 BorderRadius.circular(5), // <-- Radius
                           ),
+                        ),
+                        child: Image.asset(
+                          'assets/images/Voice.png',
+                          color: Colors.white,
                         ),
                       ),
                     )
@@ -87,17 +89,17 @@ class _StoreScreenState extends State<StoreScreen> {
                 padding: const EdgeInsets.only(top: 10, bottom: 10),
                 child: Row(
                   children: [
-                    Text(
+                    const Text(
                       'Choose Brand',
                       style:
                           TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
                     ),
-                    Spacer(
+                    const Spacer(
                       flex: 1,
                     ),
                     InkWell(
                       onTap: () {},
-                      child: Text('View All'),
+                      child: const Text('View All'),
                     ),
                   ],
                 ),
@@ -108,28 +110,28 @@ class _StoreScreenState extends State<StoreScreen> {
                   children: [
                     InkWell(
                       onTap: () {},
-                      child: Container(
+                      child: SizedBox(
                         width: 100,
                         child: Image.asset('assets/images/Adidas.png'),
                       ),
                     ),
                     InkWell(
                       onTap: () {},
-                      child: Container(
+                      child: SizedBox(
                         width: 100,
                         child: Image.asset('assets/images/Nike.png'),
                       ),
                     ),
                     InkWell(
                       onTap: () {},
-                      child: Container(
+                      child: SizedBox(
                         width: 100,
                         child: Image.asset('assets/images/Adidas.png'),
                       ),
                     ),
                     InkWell(
                       onTap: () {},
-                      child: Container(
+                      child: SizedBox(
                         width: 100,
                         child: Image.asset('assets/images/Fila.png'),
                       ),
@@ -141,17 +143,17 @@ class _StoreScreenState extends State<StoreScreen> {
                 padding: const EdgeInsets.only(top: 10, bottom: 10),
                 child: Row(
                   children: [
-                    Text(
+                    const Text(
                       'New Arrival',
                       style:
                           TextStyle(fontSize: 17, fontWeight: FontWeight.bold),
                     ),
-                    Spacer(
+                    const Spacer(
                       flex: 1,
                     ),
                     InkWell(
                       onTap: () {},
-                      child: Text('View All'),
+                      child: const Text('View All'),
                     ),
                   ],
                 ),
@@ -166,11 +168,11 @@ class _StoreScreenState extends State<StoreScreen> {
                           Container(
                             decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(7),
-                                color: Color(0xffbf2f2f2),
-                                image: DecorationImage(
+                                color: const Color(0xffbf2f2f2),
+                                image: const DecorationImage(
                                     image:
                                         AssetImage('assets/images/img1.png'))),
-                            padding: EdgeInsets.all(10),
+                            padding: const EdgeInsets.all(10),
                             height: 175,
                             width: 175,
                             child: Align(
@@ -181,7 +183,7 @@ class _StoreScreenState extends State<StoreScreen> {
                                         'assets/images/Heart.png'))),
                           ),
                           Container(
-                            child: Column(
+                            child: const Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text('Nike Sportswear Club '),
@@ -193,11 +195,11 @@ class _StoreScreenState extends State<StoreScreen> {
                           Container(
                             decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(7),
-                                color: Color(0xffbf2f2f2),
-                                image: DecorationImage(
+                                color: const Color(0xffbf2f2f2),
+                                image: const DecorationImage(
                                     image:
                                         AssetImage('assets/images/img3.png'))),
-                            padding: EdgeInsets.all(10),
+                            padding: const EdgeInsets.all(10),
                             height: 175,
                             width: 175,
                             child: Align(
@@ -208,7 +210,7 @@ class _StoreScreenState extends State<StoreScreen> {
                                         'assets/images/Heart.png'))),
                           ),
                           Container(
-                            child: Column(
+                            child: const Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text('Training Top Nike Sport'),
@@ -219,7 +221,7 @@ class _StoreScreenState extends State<StoreScreen> {
                           )
                         ],
                       ),
-                      Spacer(
+                      const Spacer(
                         flex: 1,
                       ),
                       Column(
@@ -227,11 +229,11 @@ class _StoreScreenState extends State<StoreScreen> {
                           Container(
                             decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(7),
-                                color: Color(0xffbf2f2f2),
-                                image: DecorationImage(
+                                color: const Color(0xffbf2f2f2),
+                                image: const DecorationImage(
                                     image:
                                         AssetImage('assets/images/img2.png'))),
-                            padding: EdgeInsets.all(10),
+                            padding: const EdgeInsets.all(10),
                             height: 175,
                             width: 175,
                             child: Align(
@@ -242,7 +244,7 @@ class _StoreScreenState extends State<StoreScreen> {
                                         'assets/images/Heart.png'))),
                           ),
                           Container(
-                            child: Column(
+                            child: const Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text('Trail Running Jacket Nike '),
@@ -254,11 +256,11 @@ class _StoreScreenState extends State<StoreScreen> {
                           Container(
                             decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(7),
-                                color: Color(0xffbf2f2f2),
-                                image: DecorationImage(
+                                color: const Color(0xffbf2f2f2),
+                                image: const DecorationImage(
                                     image:
                                         AssetImage('assets/images/img4.png'))),
-                            padding: EdgeInsets.all(10),
+                            padding: const EdgeInsets.all(10),
                             height: 175,
                             width: 175,
                             child: Align(
@@ -269,7 +271,7 @@ class _StoreScreenState extends State<StoreScreen> {
                                         'assets/images/Heart.png'))),
                           ),
                           Container(
-                            child: Column(
+                            child: const Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text('Trail Running Jacket Nike'),
@@ -290,17 +292,17 @@ class _StoreScreenState extends State<StoreScreen> {
       ),
       bottomNavigationBar: Container(
         height: 75,
-        padding: EdgeInsets.all(16),
+        padding: const EdgeInsets.all(16),
         color: Colors.white,
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
             IconButton(
               onPressed: () {},
-              icon: Text(
+              icon: const Text(
                 'Home',
                 style: TextStyle(
-                  color: Color(0xffb9775FA),
+                  color: Color(0xffb9775fa),
                 ),
               ),
             ),
