@@ -1,10 +1,9 @@
 # store_app
 
-A new Flutter project.
+### My second project in app development using the Flutter framework and Dart programming language has given me a basic understanding of using pre-made widgets, creating screens, navigating between them, and adding functionality. 
+### I also have a basic understanding of working with rows and columns, organizing screens, and structuring the code.
 
 ## Getting Started
-
-This project is a starting point for a Flutter application.
 
 A few resources to get you started if this is your first Flutter project:
 
